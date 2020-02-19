@@ -1,0 +1,74 @@
+﻿@model OnlineRealEstateEntity.UserManager
+
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+    <body>
+        <h2>SignUp</h2>
+        @using (Html.BeginForm("SignUp", "User", FormMethod.Get))
+        {
+            <table>
+                <tr>
+                    <td>
+                        @Html.Label("Name")
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(Model => Model.name)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.Label("Mail-id")
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(Model => Model.email)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.Label("Phone number")
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(Model => Model.phoneNumber)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.Label("Role")
+                    </td>
+                    <td>
+                        Buyer @Html.RadioButtonFor(Model => Model.role, "Buyer")
+                        Seller @Html.RadioButtonFor(Model => Model.role, "Seller")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.Label("Location")
+                    </td>
+                    <td>
+                        @Html.EnumDropDownListFor(Model => Model.location, "Select Location")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.Label("Password")
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(Model => Model.password)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Back", "Index")
+                    </td>
+                    <td>
+                        <input type="submit" id="=submit" />
+                    </td>
+                </tr>
+            </table>
+        }
+
+    </body>
+

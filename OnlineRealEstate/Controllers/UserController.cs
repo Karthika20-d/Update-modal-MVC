@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using OnlineRealEstateEntity;
 using System.Web.Mvc;
 
 namespace OnlineRealEstate.Controllers
@@ -13,14 +14,16 @@ namespace OnlineRealEstate.Controllers
         {
             return View();
         }
-        [HttpGet]
-        public ActionResult CreateGet()
+        [HttpGet] 
+        public ActionResult SignUp()
         {
+            ViewBag.Message = "Register successfull";
             return View();
         }
-        [HttpPost]
-        public ActionResult CreatePost()
+        [HttpGet]
+        public ActionResult Login()
         {
+            ViewBag.Message = "Login Successfull";
             return View();
         }
     }

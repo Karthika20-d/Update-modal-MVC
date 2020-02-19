@@ -23,6 +23,7 @@ namespace OnlineRealEstate.Controllers
             TempData["land"] = land;
             return RedirectToAction("DisplayDetails");
         }
+        
         public ActionResult DisplayDetails()
         {
             return View();

@@ -12,12 +12,10 @@ namespace OnlineRealEstate
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            
-
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Land", action = "DisplayLandDetails", id = UrlParameter.Optional }
+                defaults: new { controller = "User", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

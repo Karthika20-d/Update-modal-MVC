@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,6 +54,7 @@
   <ItemGroup>
     <Compile Include="LandRepositary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserRepositary.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OnlineRealEstateEntity\OnlineRealEstateEntity.csproj">

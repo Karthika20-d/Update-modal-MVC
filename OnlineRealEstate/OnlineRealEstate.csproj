@@ -145,6 +145,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Land\Create.cshtml" />
     <Content Include="Views\Land\Edit.cshtml" />
+    <Content Include="Views\User\SignUp.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Land\SignUp.cshtml" />
+    <Content Include="Views\Shared\_LayoutPage1.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -155,7 +160,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OnlineRealEstateEntity\OnlineRealEstateEntity.csproj">

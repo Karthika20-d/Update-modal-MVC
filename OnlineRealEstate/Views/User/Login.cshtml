@@ -1,0 +1,41 @@
+﻿@model OnlineRealEstateEntity.UserManager
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<body>
+<h2>Login</h2>
+@using (Html.BeginForm("SignUp", "User", FormMethod.Get))
+{
+    <table>
+        <tr>
+            <td>
+                @Html.Label("Name")
+            </td>
+            <td>
+                @Html.TextBoxFor(Model => Model.name)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.Label("Password")
+            </td>
+            <td>
+                @Html.TextBoxFor(Model => Model.password)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.ActionLink("Back", "Index")
+            </td>
+            <td>
+                <input type="submit" id="=submit" />
+            </td>
+        </tr>
+    </table>
+
+}
+
+</body>
+
